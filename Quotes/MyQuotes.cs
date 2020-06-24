@@ -6,6 +6,8 @@ namespace Quotes
 {
     internal class MyQuotes
     {
+        #region Local Variables and Properties
+
         private List<string> quoteList = new List<string>();
 
         public string getQuote
@@ -18,11 +20,22 @@ namespace Quotes
             }
         }
 
+        #endregion
+
+        #region Constructor
+
         public MyQuotes()
         {
             loadQuotes();
         }
 
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Load the text file containing the quotes
+        /// </summary>
         private void loadQuotes()
         {
             string line;
@@ -36,5 +49,7 @@ namespace Quotes
 
             file.Close();
         }
+
+        #endregion
     }
 }

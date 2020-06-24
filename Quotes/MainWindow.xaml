@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quotes"
         mc:Ignorable="d"
-        Title="Quote of the Day" Height="450" Width="653.214">
+        Title="Quote of the Day" Height="450" Width="653.214" ResizeMode="NoResize" Closing="Window_Closing">
     <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
         <Image x:Name="image" Height="419" VerticalAlignment="Top" Source="Images\Albert-Einstein-Quotes.jpg" MouseLeftButtonDown="Image_MouseLeftButtonDown" />
-        <Label x:Name="labelQuote" Height="404" Margin="309,10,10,5" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-            <TextBlock Name="textBlockQuote" TextWrapping="WrapWithOverflow" TextAlignment="Center">
+        <Label x:Name="labelQuote" Height="404" Margin="309,10,10,5" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseLeftButtonDown="Image_MouseLeftButtonDown">
+            <TextBlock Name="textBlockQuote" TextWrapping="WrapWithOverflow" TextAlignment="Center" MouseLeftButtonDown="Image_MouseLeftButtonDown">
                 Insanity: doing the same thing over and over again and expecting different results.
             </TextBlock>
         </Label>
