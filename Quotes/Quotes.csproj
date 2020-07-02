@@ -99,9 +99,9 @@
     <Resource Include="Images\Albert-Einstein-Quotes.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Quotes.txt">
+    <Content Include="Quotes.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
